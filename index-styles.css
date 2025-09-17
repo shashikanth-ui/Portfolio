@@ -1,0 +1,101 @@
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/* initial state */
+body {
+  opacity: 1;
+  transition: opacity 0.3s ease; /* quick fade */
+}
+
+
+p, button {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+}
+
+.index-text-yellow{
+  color: #00FF00;
+  text-shadow: 0 0 1px #00FF00, 0 0 5px #00FF00; /* softer glow */
+}
+
+body, html {
+  overflow: hidden;
+  height: 100%;
+}
+
+.index-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-content {
+  border: 3px solid #00FF00; /* thinner and softer */
+  border-radius: 12px;
+  padding: 50px 40px;
+  max-width: 800px;
+  width: 90%;
+  min-height: 400px;
+  text-align: left;
+  background-color: black;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00 inset; /* softer glow */
+  z-index: 2;
+  position: relative;
+}
+
+.index-content p {
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.index-start-btn {
+  background-color: black;
+  border: 2px solid gray;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 10px auto 0;
+  display: none; /* hide initially */
+  font-size: clamp(0.6rem, 2vw, 0.9rem);
+  cursor: pointer;
+  color: white;
+}
+
+.index-start-btn:hover {
+  border-color: #00FF00;
+  color: #00FF00;
+  text-shadow: 0 0 5px #00FF00;
+}
+
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: #00FF00;
+  text-shadow: 0 0 1px #00FF00, 0 0 4px #00FF00;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+#hacker-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
