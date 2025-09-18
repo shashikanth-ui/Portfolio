@@ -64,7 +64,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const binary = "01@!#$%^&*";
+const binary = "01";
 const fontSize = 16;
 const columns = Math.floor(canvas.width / fontSize);
 const drops = Array(columns).fill(0);
@@ -85,7 +85,7 @@ function draw() {
       drops[i] = 0;
     }
 
-    drops[i] += 0.15; // keeps fall speed visible
+    drops[i] += 0.975; // keeps fall speed visible
   }
 
   requestAnimationFrame(draw);
