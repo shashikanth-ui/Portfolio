@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shashikanth Portfolio - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- Binary canvas -->
+  <canvas id="binary-canvas"></canvas>
+  <!-- Glitch overlay -->
+  <div class="glitch-overlay" id="glitchOverlay">
+    <div class="noise" id="noise"></div>
+    <div class="rgb" id="rgbLayer"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div id="tears"></div>
+    <div class="access-wrap">
+      <span class="crt-text" id="accessText" data-text="ACCESS GRANTED">ACCESS GRANTED</span>
+    </div>
+  </div>
+  <!-- Main content -->
+  <main class="home-container" id="mainContent" role="main" aria-hidden="true">
+    <div class="profile-card">
+      <h1>👨‍💻 Pillala Shashikanth</h1>
+      <p>Web Developer | AI Enthusiast | VR Creator</p>
+      <p>Welcome to my digital portfolio.</p>
+    </div>
+  </main>
+  <script src="home.js"></script>
+</body>
+</html>

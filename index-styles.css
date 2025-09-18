@@ -1,33 +1,46 @@
-*{
-  border: 0;
-  padding: 0;
+* {
   margin: 0;
-}
-/* initial state */
-body {
-  opacity: 1;
-  transition: opacity 0.3s ease; /* quick fade */
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
+/* ensure always black, no white flash */
+html, body {
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+/* Overlay for transitions */
+.fade-overlay {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+/* remove old body opacity trick */
+/* body {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+} */
 
 p, button {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
-  font-style: normal;
   color: aliceblue;
 }
 
-.index-text-yellow{
+.index-text-yellow {
   color: #00FF00;
-  text-shadow: 0 0 1px #00FF00, 0 0 5px #00FF00; /* softer glow */
+  text-shadow: 0 0 1px #00FF00, 0 0 5px #00FF00;
 }
 
-body, html {
-  overflow: hidden;
-  height: 100%;
-}
-
-.index-container{
+.index-container {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -35,7 +48,7 @@ body, html {
 }
 
 .index-content {
-  border: 3px solid #00FF00; /* thinner and softer */
+  border: 3px solid #00FF00;
   border-radius: 12px;
   padding: 50px 40px;
   max-width: 800px;
@@ -43,13 +56,10 @@ body, html {
   min-height: 400px;
   text-align: left;
   background-color: black;
-  box-sizing: border-box;
-
+  box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00 inset;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00 inset; /* softer glow */
   z-index: 2;
   position: relative;
 }
@@ -66,18 +76,16 @@ body, html {
   border-radius: 6px;
   padding: 10px 20px;
   margin: 10px auto 0;
-  display: none; /* hide initially */
+  display: none;
   font-size: clamp(0.6rem, 2vw, 0.9rem);
   cursor: pointer;
   color: white;
 }
-
 .index-start-btn:hover {
   border-color: #00FF00;
   color: #00FF00;
   text-shadow: 0 0 5px #00FF00;
 }
-
 
 .cursor {
   display: inline-block;
@@ -86,10 +94,7 @@ body, html {
   text-shadow: 0 0 1px #00FF00, 0 0 4px #00FF00;
   animation: blink 1s step-start infinite;
 }
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
+@keyframes blink { 50% { opacity: 0; } }
 
 #hacker-bg {
   position: fixed;
@@ -97,5 +102,3 @@ body, html {
   left: 0;
   z-index: 0;
 }
-
-
