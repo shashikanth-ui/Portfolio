@@ -584,20 +584,33 @@ button[data-tabid="tab-exp"] {
 }
 
 /* ---------- RESPONSIVE FOR LARGE TERMINAL ---------- */
+/* =====================
+   Max-width: 1200px
+   ===================== */
+
 @media (max-width: 1200px) {
   .terminal-window {
     width: 90%;
     height: 70vh;
   }
-  
-  .name-heading {
-    font-size: 26px !important; /* FIX 2: PROPORTIONALLY LARGER */
-  }
-  
-  .role-heading {
-    font-size: 12px !important;
-  }
+
+  /* UPDATED FONT SIZES */
+  .name-heading { font-size: 30px !important; }
+  .role-heading { font-size: 18px !important; }
+  .terminal-output,
+  .nav-text,
+  .tab-item,
+  .tab-add,
+  .tab-close,
+  .vertical-email,
+  .terminal-footer { font-size: 14px !important; }
+  .prompt,
+  .cmd-input { font-size: 13px !important; }
 }
+
+/* =====================
+   Max-width: 768px
+   ===================== */
 
 @media (max-width: 768px) {
   .home-container {
@@ -606,157 +619,156 @@ button[data-tabid="tab-exp"] {
     gap: 16px;
     padding: 12px;
   }
-  
-.top-nav {
-  order: 1;
-  justify-self: center;
-  margin-bottom: 0;
-  width: 100%; /* ADD THIS */
-  display: flex; /* ADD THIS */
-  justify-content: center; /* ADD THIS */
-}
-  
-  .nav-list {
-    gap: 10px; /* FIX 2: INCREASED GAP */
+
+  .top-nav {
+    order: 1;
+    justify-self: center;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
     justify-content: center;
-    max-width: 100vw; /* FIX 2: WIDER FOR BIGGER TEXT */
+  }
+
+  .nav-list {
+    gap: 10px;
+    justify-content: center;
+    max-width: 100vw;
     margin: 0 auto;
     justify-items: center;
     text-align: center;
   }
 
-  
-
   .nav-btn {
-    font-size: 15px; /* FIX 2: INCREASED FROM 7px */
-    padding: 8px 14px; /* FIX 2: INCREASED PADDING */
+    font-size: 12px; /* UPDATED */
+    padding: 8px 14px;
     text-align: center;
     width: 100%;
   }
-  
+
   .terminal-wrap {
     order: 2;
     padding: 0;
     flex: 1;
   }
-  
+
   .terminal-window {
     width: 100%;
     height: 60vh;
     min-height: 400px;
   }
-  
+
   .tab-item {
-    min-width: 90px; /* FIX 2: WIDER FOR BIGGER TEXT */
-    font-size: 9px; /* FIX 2: INCREASED FROM 7px */
-    padding: 8px 14px; /* FIX 2: INCREASED PADDING */
+    min-width: 90px;
+    font-size: 12px; /* UPDATED */
+    padding: 8px 14px;
   }
-  
+
   .side-left {
     order: 3;
     flex-direction: row;
     justify-content: center;
     gap: 16px;
   }
-  
+
   .social-item {
     width: 38px;
     height: 38px;
   }
-  
+
   .social-icon {
     width: 18px;
     height: 18px;
   }
-  
+
   .side-right {
     order: 4;
     text-align: center;
   }
-  
+
   .vertical-email {
     writing-mode: horizontal-tb;
     text-orientation: unset;
-    font-size: 10px; /* FIX 2: INCREASED FROM 8px */
-    padding: 10px 14px; /* FIX 2: INCREASED PADDING */
+    font-size: 12px; /* UPDATED */
+    padding: 10px 14px;
   }
-  
+
   .terminal-footer {
     order: 5;
     margin-top: 10px;
-    font-size: 8px; /* FIX 2: SLIGHTLY LARGER ON MOBILE */
+    font-size: 12px; /* UPDATED */
   }
-  
+
   .terminal-body {
-    padding: 20px; /* FIX 2: INCREASED PADDING */
+    padding: 20px;
   }
-  
+
   .name-heading {
-    font-size: 20px !important; /* FIX 2: INCREASED FROM 18px */
+    font-size: 22px !important; /* UPDATED */
   }
-  
+
   .role-heading {
-    font-size: 11px !important; /* FIX 2: INCREASED FROM 10px */
+    font-size: 12px !important; /* UPDATED */
   }
-  
+
   .terminal-output {
-    font-size: 11px; /* FIX 2: INCREASED FROM 9px */
+    font-size: 12px; /* UPDATED */
   }
-  
+
   .tabs-bar {
-    min-height: 36px; /* FIX 2: TALLER FOR BIGGER TEXT */
+    min-height: 36px;
   }
-  
+
   .contact-heading {
-    font-size: 18px; /* FIX 2: INCREASED FROM 16px */
+    font-size: 18px;
   }
-  
-  /* FIX 3: MOBILE CONTACT FORM MARGINS */
+
   .contact-form {
-    padding: 20px 40px; /* FIX 3: REDUCED BUT CONSISTENT MARGINS */
+    padding: 20px 40px;
+  }
+
+  .prompt,
+  .cmd-input {
+    font-size: 11px; /* UPDATED */
   }
 }
+
+/* =====================
+   Max-width: 480px
+   ===================== */
 
 @media (max-width: 480px) {
   .terminal-window {
     height: 55vh;
     min-height: 350px;
   }
-  
-  .name-heading {
-    font-size: 18px !important; /* FIX 2: INCREASED FROM 16px */
-  }
-  
-  .role-heading {
-    font-size: 10px !important; /* FIX 2: INCREASED FROM 8px */
-  }
-  
-  .terminal-output {
-    font-size: 10px; /* FIX 2: INCREASED FROM 8px */
-  }
-  
+
+  .name-heading { font-size: 18px !important; }
+  .role-heading { font-size: 10px !important; }
+  .terminal-output,
+  .nav-text,
+  .tab-item,
+  .tab-add,
+  .tab-close,
+  .vertical-email,
+  .terminal-footer { font-size: 10px !important; }
+  .prompt,
+  .cmd-input { font-size: 10px !important; }
+
   .nav-btn {
-    font-size: 10px; /* FIX 2: INCREASED FROM 6px */
-    padding: 6px 10px; /* FIX 2: INCREASED PADDING */
-  }
-  
-  .terminal-body {
-    padding: 16px; /* FIX 2: INCREASED PADDING */
+    font-size: 9px;
+    padding: 6px 10px;
   }
 
-
-  .prompt, .cmd-input {
-    font-size: 10px; /* FIX 2: INCREASED FROM 8px */
-  }
-  
   .tab-item {
     min-width: 75px;
-    font-size: 8px; /* FIX 2: INCREASED */
   }
-  
-  /* FIX 3: SMALLEST SCREEN CONTACT FORM */
+
+  .terminal-body {
+    padding: 16px;
+  }
+
   .contact-form {
-    padding: 15px 20px; /* FIX 3: MINIMAL BUT CONSISTENT MARGINS */
+    padding: 15px 20px;
   }
 }
 
