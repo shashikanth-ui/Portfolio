@@ -8,13 +8,6 @@ window.addEventListener("load", () => {
   });
 });
 
-function navigateWithFade() {
-  fadeOverlay.style.opacity = 1; // fade to black
-  setTimeout(() => {
-    window.location.href = "home.html";
-  }, 600);
-}
-
 // enable button + enter key
 function enableNavigation() {
   btn.addEventListener("click", navigateWithFade);
@@ -22,6 +15,13 @@ function enableNavigation() {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") navigateWithFade();
   });
+}
+
+function navigateWithFade() {
+  fadeOverlay.style.opacity = 1; // fade to black
+  setTimeout(() => {
+    window.location.href = "./home.html";
+  }, 600);
 }
 
 // Typing effect
