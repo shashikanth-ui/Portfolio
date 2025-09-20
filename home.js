@@ -166,7 +166,7 @@ window.addEventListener("load", () => {
     }, 3400);
 });
 
-/* ---------- Terminal system (UPDATED - FIX 2 & FAKE COMMANDS) ---------- */
+/* ---------- Terminal system ---------- */
 function initTerminalSystem() {
     // Elements
     const cmdInput = document.getElementById("cmdInput");
@@ -204,7 +204,6 @@ function initTerminalSystem() {
     const tabSequence = ['about', 'experience', 'work', 'contact'];
     let currentTabSequenceIndex = 0;
 
-    // MODIFIED: Initial text with clickable links
     const initialText = `This is a Fully Interactive Portfolio Page with a Linux Inspired Terminal
 
 To Use the Portfolio Either <span class="highlight">use the navigation</span> Or <span class="highlight">explore the terminal</span>
@@ -215,16 +214,6 @@ To Begin, Type:
         <span class="command-bracket instruction-link" data-command="3">[3]</span> or <span class="command-text instruction-link" data-command="open work">[open work]</span>: Opens my projects on GitHub
         <span class="command-bracket instruction-link" data-command="4">[4]</span> or <span class="command-text instruction-link" data-command="open contactMe">[open contactMe]</span>: Runs contact me program in terminal
         <span class="command-bracket instruction-link" data-command="5">[5]</span> or <span class="command-text instruction-link" data-command="resume">[resume]</span>: Downloads my resume`;
-
-    // FIX 2: HELPER FUNCTION TO ADD GREEN PROMPT TO ALL OUTPUTS
-    function addPromptToOutput(text) {
-        const lines = text.split('\n');
-        const promptedLines = lines.map(line => {
-            if (line.trim() === '') return line;
-            return `<span style="color: #00ff88;">${state.prompt}</span> ${line}`;
-        });
-        return promptedLines.join('\n');
-    }
 
     // Typewriter function with HTML formatting
     function typeText(targetEl, text, speed = 15, cb) {
@@ -399,7 +388,6 @@ To Begin, Type:
             .replace(/>/g, "&gt;");
     }
 
-    // FIX 2: FAKE TERMINAL COMMANDS
     function handleFakeCommands(cmd) {
     const lc = cmd.toLowerCase().trim();
     
@@ -484,7 +472,6 @@ hello`;
         }
     }
 
-    // FIX 2: UPDATED COMMAND HANDLING WITH FAKE COMMANDS AND GREEN PROMPTS
     function handleCommand(raw) {
     const cmd = (raw || "").trim();
     if (!cmd) {
@@ -501,14 +488,13 @@ hello`;
     const fakeOutput = handleFakeCommands(cmd);
     if (fakeOutput !== null) {
         if (fakeOutput !== '') {
-            // Remove the prompt from fake output since we already added it above
             const cleanOutput = fakeOutput.replace(`<span style="color: #00ff88;">${state.prompt}</span> ${cmd}\n`, '');
             appendOutput(cleanOutput + '\n');
         }
         return;
     }
 
-    // Handle portfolio commands (remove the prompt lines from these since we added it above)
+    // Handle portfolio commands
     if (lc === "1" || lc === "open aboutme" || lc === "open about" || lc === "aboutme") {
         createOrSwitchTab("about", "About", getAboutContent());
     } else if (lc === "2" || lc === "open experience" || lc === "experience") {
@@ -517,7 +503,7 @@ hello`;
         createOrSwitchTab("work", "Work", getWorkContent());
     } else if (lc === "4" || lc === "open contactme" || lc === "open contact" || lc === "contactme") {
         createOrSwitchTab("contact", "Contact", getContactContent());
-    } else if (lc === '5' || lc === 'resume' || lc === 'download resume' || lc === 'get resume') { // MODIFIED: Added '5'
+    } else if (lc === '5' || lc === 'resume' || lc === 'download resume' || lc === 'get resume') {
         const link = document.createElement('a');
         link.href = './public/Pillala_Shashikanth_Resume.pdf';
         link.setAttribute('download', 'Pillala_Shashikanth_Resume.pdf');
@@ -525,7 +511,6 @@ hello`;
         link.click();
         document.body.removeChild(link);
         appendOutput('Downloading resume...\n');
-        // MODIFIED: Added feedback timeout
         setTimeout(() => {
             appendOutput('Downloaded successfully.\n');
         }, 1000);
@@ -547,7 +532,6 @@ Type 'help' for list of commands.
     function appendOutput(text) {
     terminalOutput.innerHTML += text;
     
-    // Move input row right after the new content
     const inputRow = document.getElementById('inputRow');
     const commandSection = document.querySelector('.command-section');
     
@@ -559,7 +543,7 @@ Type 'help' for list of commands.
     }
 
     // =======================================================
-    // REFACTORED CONTENT FUNCTIONS
+    // CONTENT FUNCTIONS
     // =======================================================
     
     function getAboutContent() {
@@ -576,14 +560,15 @@ Type 'help' for list of commands.
                         <p>Here are a few technologies I've worked with recently:</p>
                         <div class="tech-list">
                             <ul>
-                                <li><span>▸</span>HTML & (S)CSS</li>
-                                <li><span>▸</span>React</li>
-                                <li><span>▸</span>Angular</li>
+                            <li><span>▸</span>JavaScript (ES10+)</li>
+                            <li><span>▸</span>Node.js / Express.js</li>
+                            <li><span>▸</span>REST APIs</li>
                             </ul>
+
                             <ul>
-                                <li><span>▸</span>JavaScript (ES10+)</li>
-                                <li><span>▸</span>Vue</li>
-                                <li><span>▸</span>WordPress</li>
+                            <li><span>▸</span>HTML5 & (S)CSS</li>
+                            <li><span>▸</span>Firebase</li>
+                            <li><span>▸</span>PostgreSQL</li>
                             </ul>
                         </div>
                         <a href="./public/Pillala_Shashikanth_Resume.pdf" class="about-resume-btn" download>Download Resume</a>
@@ -597,8 +582,6 @@ Type 'help' for list of commands.
     }
     
     function getExperienceContent() {
-        // Add a class for mobile view if the screen is small
-        const mobileClass = window.innerWidth <= 768 ? 'mobile-exp-layout' : '';
         return `
             <div class="content-container exp-section">
                 <div class="exp-wrapper">
@@ -606,43 +589,74 @@ Type 'help' for list of commands.
                         <h2>Where I've Worked</h2>
                         <div class="header-line"></div>
                     </div>
-                    <div class="exp-content-layout ${mobileClass}">
+                    <div class="exp-content-layout">
                         <ul id="exp-sidebar" class="exp-sidebar">
-                            <li><button class="exp-option active" data-target="ey">Edunet / EY</button></li>
+                            <li><button class="exp-option active" data-target="prodigy">Prodigy InfoTech</button></li>
+                            <li><button class="exp-option" data-target="ey">Edunet / EY</button></li>
                             <li><button class="exp-option" data-target="nitw">NIT Warangal</button></li>
                             <li><button class="exp-option" data-target="deloitte">Deloitte</button></li>
                             <li><button class="exp-option" data-target="ieee">IEEE (Volunteering)</button></li>
+                            <li><button class="exp-option" data-target="education">Education</button></li>
+                            <li><button class="exp-option" data-target="certs">Certifications</button></li>
                         </ul>
                         <section id="exp-content" class="exp-details">
-                            <article id="ey" class="exp-detail active">
-                                <h3>Full-Stack Web Development Intern <span>@ Edunet / EY GDS</span></h3>
-                                <p class="exp-date">Feb 2024 - Apr 2024</p>
+                            <article id="prodigy" class="exp-detail active">
+                                <h3>Full-Stack Web Development Intern <span>@ Prodigy InfoTech</span></h3>
+                                <p class="exp-date">August 2024 - September 2024</p>
                                 <ul>
-                                    <li><span>▸</span>Developed full-stack applications using Node.js, Express.js, EJS, and PostgreSQL.</li>
-                                    <li><span>▸</span>Built secure APIs and implemented robust OAuth/JWT authentication mechanisms.</li>
+                                    [cite_start]<li><span>▸</span>Successfully completed a one-month intensive internship in Full-Stack Web Development. [cite: 29]</li>
+                                    [cite_start]<li><span>▸</span>Received a Letter of Recommendation for exceptional performance, highlighting remarkable technical skills, professionalism, and a creative approach to solving complex problems. [cite: 74, 77, 78, 79]</li>
+                                </ul>
+                            </article>
+                            <article id="ey" class="exp-detail">
+                                <h3>Full-Stack Web Development Intern <span>@ Edunet / EY GDS</span></h3>
+                                <p class="exp-date">February 2024 - April 2024</p>
+                                <ul>
+                                    [cite_start]<li><span>▸</span>Developed key features for a full-scale E-commerce Platform, including product catalogs, shopping cart functionality, and order management. [cite: 46]</li>
+                                    [cite_start]<li><span>▸</span>Built full-stack applications using Node.js, Express.js, EJS, and PostgreSQL. [cite: 51]</li>
+                                    [cite_start]<li><span>▸</span>Constructed secure REST APIs and implemented robust user authentication using OAuth/JWT mechanisms. [cite: 52]</li>
                                 </ul>
                             </article>
                             <article id="nitw" class="exp-detail">
                                 <h3>Intern <span>@ NIT Warangal</span></h3>
-                                <p class="exp-date">Oct 2024 - Nov 2024</p>
+                                <p class="exp-date">October 2024</p>
                                 <ul>
-                                    <li><span>▸</span>Built full-stack applications using the Node.js, Express, and EJS stack with Firebase for backend services.</li>
-                                    <li><span>▸</span>Focused on implementing user authentication and seamless database integration.</li>
+                                    [cite_start]<li><span>▸</span>Built a comprehensive Freelance Portal featuring skill-based user search, messaging, and project posting functionalities. [cite: 47]</li>
+                                    [cite_start]<li><span>▸</span>Developed the application using Node.js, Express, and EJS, with Firebase for real-time database and authentication services. [cite: 55]</li>
                                 </ul>
                             </article>
                             <article id="deloitte" class="exp-detail">
                                 <h3>Virtual Experience Program <span>@ Deloitte</span></h3>
                                 <p class="exp-date">March 2023</p>
                                 <ul>
-                                    <li><span>▸</span>Completed a series of practical modules covering coding, data analysis, and cybersecurity tasks.</li>
+                                    [cite_start]<li><span>▸</span>Completed a series of practical task modules in five key technology areas: Coding [cite: 9][cite_start], Data Analysis [cite: 10][cite_start], Development [cite: 11][cite_start], Cyber Security [cite: 12][cite_start], and Forensic Technology. [cite: 13]</li>
                                 </ul>
                             </article>
                             <article id="ieee" class="exp-detail">
-                                <h3>Secretary <span>@ IEEE Student Branch</span></h3>
-                                <p class="exp-date">2021 - 2025</p>
+                                <h3>Secretary & Publicity Lead <span>@ IEEE Student Branch</span></h3>
+                                <p class="exp-date">2022 - 2024</p>
                                 <ul>
-                                    <li><span>▸</span>As a leader of the student branch, I was responsible for organizing technical events and workshops.</li>
-                                    <li><span>▸</span>Successfully drove effective team collaboration among members to execute branch initiatives.</li>
+                                    [cite_start]<li><span>▸</span>Served as Secretary and Publicity Lead for the student branch, organizing technical events and workshops. [cite: 39]</li>
+                                    <li><span>▸</span>Co-organized two national-level flagship events, NSPC '23 and NSPC '24.</li>
+                                    <li><span>▸</span>Successfully brought over 300 delegates to each event through strategic outreach and effective team collaboration.</li>
+                                </ul>
+                            </article>
+                            <article id="education" class="exp-detail">
+                                <h3>B.Tech - Computer Science <span>@ Vaagdevi College of Engineering</span></h3>
+                                [cite_start]<p class="exp-date">2021 - 2025 [cite: 67]</p>
+                                <ul>
+                                    [cite_start]<li><span>▸</span>Current CGPA: 7.87 [cite: 62]</li>
+                                </ul>
+                            </article>
+                             <article id="certs" class="exp-detail">
+                                <h3>My Certifications & Digital Badges</h3>
+                                <p class="exp-date">Continuous Learning & Skill Validation</p>
+                                <ul>
+                                    [cite_start]<li><span>▸</span>AWS Academy Graduate - Cloud Foundations [cite: 110]</li>
+                                    [cite_start]<li><span>▸</span>Full-Stack Web Development - Prodigy InfoTech [cite: 29]</li>
+                                    [cite_start]<li><span>▸</span>Full-Stack Web Development - Edunet Foundation / EY [cite: 66, 101]</li>
+                                    [cite_start]<li><span>▸</span>Technology Virtual Experience - Deloitte [cite: 5, 65]</li>
+                                    [cite_start]<li><span>▸</span>Full Stack Web Developer - Udemy [cite: 64]</li>
                                 </ul>
                             </article>
                         </section>
@@ -769,7 +783,6 @@ Type 'help' for list of commands.
             return;
         }
 
-        // Only run the tab-switching logic on desktop
         if (window.innerWidth > 768) {
             const buttons = sidebar.querySelectorAll(".exp-option");
             const contentPanel = document.getElementById('tab-experience');
@@ -870,7 +883,6 @@ Type 'help' for list of commands.
         btn.addEventListener("click", (e) => {
             const cmd = btn.getAttribute("data-cmd");
             if (cmd) {
-                // Prevent default link behavior if it's a command
                 if (btn.tagName === 'A') e.preventDefault();
                 handleCommand(cmd);
             }
@@ -935,7 +947,6 @@ Type 'help' for list of commands.
         }
     });
 
-    // ***** MODIFIED: Listener for clickable instructions *****
     function setupInstructionListeners() {
         terminalOutput.addEventListener('click', function(e) {
             const link = e.target.closest('.instruction-link');
@@ -988,20 +999,18 @@ function loop() {
         j--;
     }
 
-    // ✅ Word fully typed
     if (!isDeleting && j === phrases[i].length) {
         isDeleting = true;
-        setTimeout(loop, 3000); // ⏸ 3s pause before deleting
+        setTimeout(loop, 3000);
         return;
     }
 
-    // ✅ Word fully deleted
     if (isDeleting && j === 0) {
         isDeleting = false;
         i = (i + 1) % phrases.length;
     }
 
-    const speed = isDeleting ? 60 : 120; // typing vs deleting speed
+    const speed = isDeleting ? 60 : 120;
     setTimeout(loop, speed);
 }
 
