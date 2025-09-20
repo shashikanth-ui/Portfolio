@@ -283,6 +283,9 @@ To Begin, Type:
         if (key === 'work') {
             initializeWorkListeners();
         }
+        if (key === 'contact') {
+            initContactFormListeners();
+        }
 
         switchToTab(tabId);
     }
@@ -604,59 +607,63 @@ Type 'help' for list of commands.
                                 <h3>Full-Stack Web Development Intern <span>@ Prodigy InfoTech</span></h3>
                                 <p class="exp-date">August 2024 - September 2024</p>
                                 <ul>
-                                    [cite_start]<li><span>▸</span>Successfully completed a one-month intensive internship in Full-Stack Web Development. [cite: 29]</li>
-                                    [cite_start]<li><span>▸</span>Received a Letter of Recommendation for exceptional performance, highlighting remarkable technical skills, professionalism, and a creative approach to solving complex problems. [cite: 74, 77, 78, 79]</li>
+                                    <li><span>▸</span>Successfully completed a one-month intensive internship in Full-Stack Web Development. </li>
+                                    <li><span>▸</span>Received a Letter of Recommendation for exceptional performance, highlighting remarkable technical skills, professionalism, and a creative approach to solving complex problems. </li>
                                 </ul>
                             </article>
                             <article id="ey" class="exp-detail">
                                 <h3>Full-Stack Web Development Intern <span>@ Edunet / EY GDS</span></h3>
                                 <p class="exp-date">February 2024 - April 2024</p>
                                 <ul>
-                                    [cite_start]<li><span>▸</span>Developed key features for a full-scale E-commerce Platform, including product catalogs, shopping cart functionality, and order management. [cite: 46]</li>
-                                    [cite_start]<li><span>▸</span>Built full-stack applications using Node.js, Express.js, EJS, and PostgreSQL. [cite: 51]</li>
-                                    [cite_start]<li><span>▸</span>Constructed secure REST APIs and implemented robust user authentication using OAuth/JWT mechanisms. [cite: 52]</li>
+                                    <li><span>▸</span>Developed key features for a full-scale E-commerce Platform, including product catalogs, shopping cart functionality, and order management. </li>
+                                    <li><span>▸</span>Built full-stack applications using Node.js, Express.js, EJS, and PostgreSQL. </li>
+                                    <li><span>▸</span>Constructed secure REST APIs and implemented robust user authentication using OAuth/JWT mechanisms. </li>
                                 </ul>
                             </article>
                             <article id="nitw" class="exp-detail">
                                 <h3>Intern <span>@ NIT Warangal</span></h3>
                                 <p class="exp-date">October 2024</p>
                                 <ul>
-                                    [cite_start]<li><span>▸</span>Built a comprehensive Freelance Portal featuring skill-based user search, messaging, and project posting functionalities. [cite: 47]</li>
-                                    [cite_start]<li><span>▸</span>Developed the application using Node.js, Express, and EJS, with Firebase for real-time database and authentication services. [cite: 55]</li>
+                                    <li><span>▸</span>Built a comprehensive Freelance Portal featuring skill-based user search, messaging, and project posting functionalities. </li>
+                                    <li><span>▸</span>Developed the application using Node.js, Express, and EJS, with Firebase for real-time database and authentication services. </li>
                                 </ul>
                             </article>
                             <article id="deloitte" class="exp-detail">
                                 <h3>Virtual Experience Program <span>@ Deloitte</span></h3>
                                 <p class="exp-date">March 2023</p>
                                 <ul>
-                                    [cite_start]<li><span>▸</span>Completed a series of practical task modules in five key technology areas: Coding [cite: 9][cite_start], Data Analysis [cite: 10][cite_start], Development [cite: 11][cite_start], Cyber Security [cite: 12][cite_start], and Forensic Technology. [cite: 13]</li>
+                                    <li><span>▸</span>Completed a series of practical task modules in five key technology areas: Coding , Data Analysis , Development , Cyber Security , and Forensic Technology. </li>
                                 </ul>
                             </article>
                             <article id="ieee" class="exp-detail">
                                 <h3>Secretary & Publicity Lead <span>@ IEEE Student Branch</span></h3>
                                 <p class="exp-date">2022 - 2024</p>
                                 <ul>
-                                    [cite_start]<li><span>▸</span>Served as Secretary and Publicity Lead for the student branch, organizing technical events and workshops. [cite: 39]</li>
-                                    <li><span>▸</span>Co-organized two national-level flagship events, NSPC '23 and NSPC '24.</li>
-                                    <li><span>▸</span>Successfully brought over 300 delegates to each event through strategic outreach and effective team collaboration.</li>
+                                    <li><span>▸</span>Served as Secretary and Publicity Lead, organizing and promoting numerous technical events, workshops, and seminars.</li>
+                                    <li><span>▸</span>Co-organized two national-level flagship events, NSPC '23 and NSPC '24, managing logistics, speakers, and promotion.</li>
+                                    <li><span>▸</span>Successfully brought over 300 delegates to each event through strategic outreach, social media campaigns, and effective team collaboration.</li>
+                                    <li><span>▸</span>Enhanced member engagement by creating compelling promotional materials and fostering a collaborative community environment.</li>
                                 </ul>
                             </article>
                             <article id="education" class="exp-detail">
                                 <h3>B.Tech - Computer Science <span>@ Vaagdevi College of Engineering</span></h3>
-                                [cite_start]<p class="exp-date">2021 - 2025 [cite: 67]</p>
+                                <p class="exp-date">2021 - 2025 </p>
                                 <ul>
-                                    [cite_start]<li><span>▸</span>Current CGPA: 7.87 [cite: 62]</li>
+                                    <li><span>▸</span>Current CGPA: 7.87</li>
+                                    <li><span>▸</span>Actively engaged in practical, hands-on learning by developing various full-stack web applications as part of the curriculum.</li>
+                                    <li><span>▸</span>Gained proficiency in core computer science subjects including Data Structures, Algorithms, Database Management, and Operating Systems.</li>
+                                    <li><span>▸</span>Collaborated on group projects, honing teamwork, communication, and project management skills in an agile environment.</li>
                                 </ul>
                             </article>
                              <article id="certs" class="exp-detail">
                                 <h3>My Certifications & Digital Badges</h3>
                                 <p class="exp-date">Continuous Learning & Skill Validation</p>
-                                <ul>
-                                    [cite_start]<li><span>▸</span>AWS Academy Graduate - Cloud Foundations [cite: 110]</li>
-                                    [cite_start]<li><span>▸</span>Full-Stack Web Development - Prodigy InfoTech [cite: 29]</li>
-                                    [cite_start]<li><span>▸</span>Full-Stack Web Development - Edunet Foundation / EY [cite: 66, 101]</li>
-                                    [cite_start]<li><span>▸</span>Technology Virtual Experience - Deloitte [cite: 5, 65]</li>
-                                    [cite_start]<li><span>▸</span>Full Stack Web Developer - Udemy [cite: 64]</li>
+                                <ul class="certificate-list">
+                                    <li><span>▸</span><a href="./public/images/aws_certificate.png" class="cert-link">AWS Academy Graduate - Cloud Foundations</a></li>
+                                    <li><span>▸</span><a href="./public/images/prodigy_certificate.png" class="cert-link">Full-Stack Web Development - Prodigy InfoTech</a></li>
+                                    <li><span>▸</span><a href="./public/images/ey_certificate.png" class="cert-link">Full-Stack Web Development - Edunet Foundation / EY</a></li>
+                                    <li><span>▸</span><a href="./public/images/deloitte_certificate.png" class="cert-link">Technology Virtual Experience - Deloitte</a></li>
+                                    <li><span>▸</span><a href="./public/images/udemy_certificate.png" class="cert-link">Full Stack Web Developer - Udemy</a></li>
                                 </ul>
                             </article>
                         </section>
@@ -677,38 +684,51 @@ Type 'help' for list of commands.
                     <div class="project-card">
                         <div class="project-header">
                             <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/Inventory-Management" target="_blank" class="external-link-icon">
+                            <a href="https://github.com/shashikanth-ui/Portfolio" target="_blank" class="external-link-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
                             </a>
                         </div>
-                        <h3>Inventory-Management</h3>
-                        <p>An inventory management website that supports complete inventory manipulation as well as multiple users. Built on top of Java Spark, React, and MySQL.</p>
+                        <h3>Portfolio</h3>
+                        <p>My personal portfolio website featuring a Linux-inspired interactive terminal. Built with vanilla JS, HTML, and CSS.</p>
                         <div class="tech-tags">
-                            <span>HTML</span><span>JavaScript</span><span>Java</span><span>CSS</span><span>Dockerfile</span>
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-header">
                             <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/Landi-Bracelets" target="_blank" class="external-link-icon">
+                            <a href="https://github.com/shashikanth-ui/Freelance-Portal" target="_blank" class="external-link-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
                             </a>
                         </div>
-                        <h3>Landi-Bracelets</h3>
-                        <p>A website for a client designed to showcase and sell bracelets. Utilizes React and Java Spark as well as the APIs for Instagram and Etsy.</p>
+                        <h3>Freelance-Portal</h3>
+                        <p>A server-side rendered portal for freelancers to find and post projects, built with Node.js and EJS.</p>
                         <div class="tech-tags">
-                            <span>CSS</span><span>JavaScript</span><span>Java</span><span>Shell</span><span>HTML</span>
+                            <span>EJS</span><span>Node.js</span><span>Express</span><span>Firebase</span>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-header">
                             <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/portfolio-v1" target="_blank" class="external-link-icon">
+                            <a href="https://github.com/shashikanth-ui/Ecommerce-Platform" target="_blank" class="external-link-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
                             </a>
                         </div>
-                        <h3>Portfolio-Website</h3>
-                        <p>This is my portfolio page. Created entirely with vanilla HTML, CSS, and JavaScript, featuring a Linux-inspired terminal design.</p>
+                        <h3>Ecommerce-Platform</h3>
+                        <p>A full-featured e-commerce web application with product listings, a shopping cart, and order management.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span><span>Node.js</span><span>PostgreSQL</span><span>EJS</span>
+                        </div>
+                    </div>
+                    <div class="project-card project-hidden">
+                        <div class="project-header">
+                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
+                            <a href="https://github.com/shashikanth-ui/Task-Manager-JS" target="_blank" class="external-link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            </a>
+                        </div>
+                        <h3>Task-Manager-JS</h3>
+                        <p>An intuitive task management application to help organize and track daily tasks and to-do lists.</p>
                         <div class="tech-tags">
                             <span>JavaScript</span><span>CSS</span><span>HTML</span>
                         </div>
@@ -716,40 +736,92 @@ Type 'help' for list of commands.
                     <div class="project-card project-hidden">
                         <div class="project-header">
                             <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/e-commerce" target="_blank" class="external-link-icon">
+                            <a href="https://github.com/shashikanth-ui/Simon-game-New" target="_blank" class="external-link-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
                             </a>
                         </div>
-                        <h3>E-commerce Website</h3>
-                        <p>A complete e-commerce platform with product listings, cart functionality, and user authentication, built with React and Firebase.</p>
+                        <h3>Simon-game-New</h3>
+                        <p>A web-based version of the classic memory game 'Simon', built to test and improve memory skills.</p>
                         <div class="tech-tags">
-                            <span>React</span><span>Firebase</span><span>Redux</span><span>SCSS</span>
+                            <span>JavaScript</span><span>CSS</span><span>HTML</span>
                         </div>
                     </div>
                     <div class="project-card project-hidden">
                         <div class="project-header">
                             <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/food-delivery-app" target="_blank" class="external-link-icon">
+                            <a href="https://github.com/shashikanth-ui/TIC---TAC---TOE" target="_blank" class="external-link-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
                             </a>
                         </div>
-                        <h3>Food Delivery App</h3>
-                        <p>A MERN stack application for browsing restaurants and ordering food. Features a clean UI and a robust backend with Express and MongoDB.</p>
+                        <h3>TIC---TAC---TOE</h3>
+                        <p>A classic Tic-Tac-Toe game created to practice and improve fundamental JavaScript logic.</p>
                         <div class="tech-tags">
-                            <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+                     <div class="project-card project-hidden">
+                        <div class="project-header">
+                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
+                            <a href="https://github.com/shashikanth-ui/To-Do-List-JS" target="_blank" class="external-link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            </a>
+                        </div>
+                        <h3>To-Do-List-JS</h3>
+                        <p>A classic To-Do List application to practice DOM manipulation and event handling in JavaScript.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+                     <div class="project-card project-hidden">
+                        <div class="project-header">
+                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
+                            <a href="https://github.com/shashikanth-ui/Weather-App-JS" target="_blank" class="external-link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            </a>
+                        </div>
+                        <h3>Weather-App-JS</h3>
+                        <p>A weather application that fetches and displays current weather data from a third-party API.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span><span>API</span><span>HTML</span><span>CSS</span>
                         </div>
                     </div>
                     <div class="project-card project-hidden">
                         <div class="project-header">
                             <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/real-estate-app" target="_blank" class="external-link-icon">
+                            <a href="https://github.com/shashikanth-ui/Blog-Website-JS" target="_blank" class="external-link-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
                             </a>
                         </div>
-                        <h3>Real Estate App</h3>
-                        <p>A full-stack real estate marketplace using the MERN stack. Allows users to list properties for sale or rent with advanced search features.</p>
+                        <h3>Blog-Website-JS</h3>
+                        <p>A dynamic blog website built to explore content management and dynamic page rendering.</p>
                         <div class="tech-tags">
-                            <span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT</span>
+                            <span>JavaScript</span><span>Node.js</span><span>EJS</span>
+                        </div>
+                    </div>
+                    <div class="project-card project-hidden">
+                        <div class="project-header">
+                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
+                            <a href="https://github.com/shashikanth-ui/Drum-Kit-JS" target="_blank" class="external-link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            </a>
+                        </div>
+                        <h3>Drum-Kit-JS</h3>
+                        <p>An interactive drum kit that plays sounds on key presses, showcasing event handling for user input.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+                     <div class="project-card project-hidden">
+                        <div class="project-header">
+                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
+                            <a href="https://github.com/shashikanth-ui/Dice-Gamee" target="_blank" class="external-link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            </a>
+                        </div>
+                        <h3>Dice-Gamee</h3>
+                        <p>A simple and fun dice game to demonstrate core JavaScript logic and DOM manipulation.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
                         </div>
                     </div>
                 </div>
@@ -767,17 +839,48 @@ Type 'help' for list of commands.
                 <h2 class="contact-heading">Contact Me</h2>
                 <p class="contact-subtitle">If you have a question or simply want to say hello.</p>
                 <form id="contactForm" class="contact-form">
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="user_name" placeholder="Your Name" required>
+                    <input type="email" name="user_email" placeholder="Your Email" required>
                     <input type="text" name="subject" placeholder="What You Want to Talk About" required>
                     <textarea name="message" placeholder="Your message here..." required></textarea>
-                    <button type="submit" class="contact-submit-btn">Submit</button>
+                    <button type="submit" class="contact-submit-btn">Send Message</button>
                 </form>
+                <p id="formStatus" class="form-status"></p>
             </div>
         `;
     }
+
+    function initCertificateModal() {
+        const modal = document.getElementById('certificateModal');
+        const modalImg = document.getElementById('certificateImage');
+        const closeModal = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.cert-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                modal.style.display = "block";
+                modalImg.src = this.href;
+            });
+        });
+
+        const close = () => {
+            modal.style.display = "none";
+        };
+
+        closeModal.addEventListener('click', close);
+
+        window.addEventListener('click', function (event) {
+            if (event.target == modal) {
+                close();
+            }
+        });
+    }
     
     function initializeExperienceListeners() {
-        const sidebar = document.getElementById("exp-sidebar");
+        const tabContent = document.getElementById('tab-experience');
+        if (!tabContent) return;
+
+        const sidebar = tabContent.querySelector("#exp-sidebar");
         if (!sidebar) {
             console.error("Experience sidebar not found. Listeners not attached.");
             return;
@@ -785,32 +888,27 @@ Type 'help' for list of commands.
 
         if (window.innerWidth > 768) {
             const buttons = sidebar.querySelectorAll(".exp-option");
-            const contentPanel = document.getElementById('tab-experience');
-            if (!contentPanel) return;
-            const details = contentPanel.querySelectorAll(".exp-detail");
+            const details = tabContent.querySelectorAll(".exp-detail");
             
-            const activeBtn = sidebar.querySelector(".exp-option.active");
-            if (activeBtn) {
-                const targetId = activeBtn.getAttribute("data-target");
-                details.forEach(d => {
-                    d.style.display = d.id === targetId ? "block" : "none";
-                });
-            }
-
             buttons.forEach(btn => {
-            btn.addEventListener("click", (e) => {
-                e.stopPropagation(); 
-                const targetId = btn.getAttribute("data-target");
-                
-                buttons.forEach(b => b.classList.remove("active"));
-                btn.classList.add("active");
+                btn.addEventListener("click", (e) => {
+                    e.stopPropagation(); 
+                    const targetId = btn.getAttribute("data-target");
+                    
+                    buttons.forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
 
-                details.forEach(d => {
-                    d.style.display = d.id === targetId ? "block" : "none";
+                    details.forEach(d => {
+                        d.classList.remove('active');
+                        if (d.id === targetId) {
+                            d.classList.add('active');
+                        }
+                    });
                 });
-            });
             });
         }
+        // Init certificate modal listeners
+        initCertificateModal();
     }
 
     function initializeWorkListeners() {
@@ -846,25 +944,28 @@ Type 'help' for list of commands.
         });
     }
 
-    // Handle contact form submission
-    function setupContactForm() {
-        document.addEventListener('submit', function(e) {
-            if (e.target && e.target.id === 'contactForm') {
-                e.preventDefault();
-                
-                const formData = new FormData(e.target);
-                const email = formData.get('email');
-                const subject = formData.get('subject');
-                const message = formData.get('message');
-                
-                const mailtoLink = `mailto:pillalashashikanth1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
-                
-                window.location.href = mailtoLink;
-                
-                appendOutput(`<span style="color: #00ff88;">${state.prompt}</span> Contact form submitted! Opening your email client...\n`);
-                
-                e.target.reset();
-            }
+    // Handle contact form submission with EmailJS
+    function initContactFormListeners() {
+        const contactForm = document.getElementById('contactForm');
+        if (!contactForm) return;
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formStatus = document.getElementById('formStatus');
+            formStatus.textContent = 'Sending...';
+
+            emailjs.sendForm('service_1ncugfi', 'template_zy3h933', this, 'diCEHKOZGExTWGStv')
+                .then(() => {
+                    formStatus.textContent = 'Message sent successfully!';
+                    formStatus.style.color = '#00ff88';
+                    contactForm.reset();
+                    setTimeout(() => formStatus.textContent = '', 5000);
+                }, (error) => {
+                    formStatus.textContent = `Failed to send. Error: ${error.text}`;
+                    formStatus.style.color = '#ff6b6b';
+                    setTimeout(() => formStatus.textContent = '', 7000);
+                });
         });
     }
 
@@ -963,9 +1064,6 @@ Type 'help' for list of commands.
     // Initialize terminal
     terminalOutput.innerHTML = "";
     cmdInput.value = "";
-
-    // Setup contact form handling
-    setupContactForm();
     
     // Setup instruction listeners
     setupInstructionListeners();
@@ -1015,3 +1113,4 @@ function loop() {
 }
 
 loop();
+

@@ -200,7 +200,7 @@ body { overflow: hidden; color: #00FF00; }
 .social-item:hover { 
     transform: scale(1.1); 
     background-color: rgba(255,255,255,0.2);
-    box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    box-shadow: 0 0 15px rgb(255, 235, 59);
 }
 .social-icon { width: 22px; height: 22px; fill: currentColor; opacity: 1; }
 
@@ -237,7 +237,7 @@ body { overflow: hidden; color: #00FF00; }
 }
 .vertical-email:hover { 
     color: #ffdd44;
-    transform: translateX(-3px);
+    transform: translateX(-3px) translateY(-3px);
 }
 
 /* Terminal wrap - MASSIVE SIZE INCREASE */
@@ -713,6 +713,18 @@ button[data-tabid="tab-exp"] {
     left: 0;
 }
 
+/* NEW: Certificate link styling */
+.cert-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+.cert-link:hover {
+    color: #ffdd44; /* Yellow on hover */
+}
+
+
 /* --- Work Section --- */
 .work-section {
     justify-content: flex-start; /* Align content to top */
@@ -867,6 +879,50 @@ button[data-tabid="tab-exp"] {
 }
 .contact-submit-btn:hover {
     background-color: rgba(255, 221, 68, 0.1);
+}
+
+/* ---------- CERTIFICATE MODAL STYLES (NEW) ---------- */
+.certificate-modal {
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.certificate-modal.visible {
+    display: flex;
+    opacity: 1;
+}
+.certificate-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
 }
 
 
