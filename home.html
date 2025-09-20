@@ -1,111 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shashikanth Portfolio - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="home.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shashikanth Portfolio - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css" />
 </head>
 <body>
-  <!-- Binary canvas -->
-  <canvas id="binary-canvas"></canvas>
+    <canvas id="binary-canvas"></canvas>
 
-  <!-- Glitch overlay -->
-  <div class="glitch-overlay" id="glitchOverlay">
-    <div class="noise" id="noise"></div>
-    <div class="rgb" id="rgbLayer"></div>
-    <div class="scanlines" aria-hidden="true"></div>
-    <div id="tears"></div>
-    <div class="access-wrap">
-      <span class="crt-text" id="accessText" data-text="ACCESS GRANTED">ACCESS GRANTED</span>
+    <div class="glitch-overlay" id="glitchOverlay">
+        <div class="noise" id="noise"></div>
+        <div class="rgb" id="rgbLayer"></div>
+        <div class="scanlines" aria-hidden="true"></div>
+        <div id="tears"></div>
+        <div class="access-wrap">
+            <span class="crt-text" id="accessText" data-text="ACCESS GRANTED">ACCESS GRANTED</span>
+        </div>
     </div>
-  </div>
 
-  <!-- Main content -->
-  <main class="home-container" id="mainContent" role="main" aria-hidden="true">
-    <!-- Top navbar -->
-    <nav class="top-nav" aria-label="portfolio navigation">
-      <ul class="nav-list">
-        <li><button class="nav-btn" data-cmd="1"><span class="nav-number">[1]</span> <span class="nav-text">About</span></button></li>
-        <li><button class="nav-btn" data-cmd="2"><span class="nav-number">[2]</span> <span class="nav-text">Experience</span></button></li>
-        <li><button class="nav-btn" data-cmd="3"><span class="nav-number">[3]</span> <span class="nav-text">Work</span></button></li>
-        <li><button class="nav-btn" data-cmd="4"><span class="nav-number">[4]</span> <span class="nav-text">Contact Me</span></button></li>
-      </ul>
-    </nav>
+    <main class="home-container" id="mainContent" role="main" aria-hidden="true">
+        <nav class="top-nav" aria-label="portfolio navigation">
+            <ul class="nav-list">
+                <li><button class="nav-btn" data-cmd="1"><span class="nav-number">[1]</span> <span class="nav-text">About</span></button></li>
+                <li><button class="nav-btn" data-cmd="2"><span class="nav-number">[2]</span> <span class="nav-text">Experience</span></button></li>
+                <li><button class="nav-btn" data-cmd="3"><span class="nav-number">[3]</span> <span class="nav-text">Work</span></button></li>
+                <li><button class="nav-btn" data-cmd="4"><span class="nav-number">[4]</span> <span class="nav-text">Contact Me</span></button></li>
+                <li><a href="./public/Pillala_Shashikanth_Resume.pdf" class="nav-btn" data-cmd="5" download><span class="nav-number">[5]</span> <span class="nav-text">Resume</span></a></li>
+            </ul>
+        </nav>
 
-    <!-- Left social column -->
-    <aside class="side-left" aria-hidden="false">
-      <a href="https://github.com/ShashikanthPillala" target="_blank" rel="noopener noreferrer" class="social-item" id="githubLink" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.7 3 8.7 7.2 10.1.5.1.7-.2.7-.5v-1.9c-2.9.7-3.6-1.3-3.6-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 1.7.8 1.7 1.8 3.1 4.8 2.2 6 .9.2-.8.6-1.4 1-1.8-2.3-.3-4.6-1.2-4.6-5.3 0-1.1.4-2 .9-2.7-.1-.3-.4-1.5.1-3.1 0 0 .7-.2 2.3.8.7-.2 1.5-.3 2.3-.3s1.6.1 2.3.3c1.6-1 2.3-.8 2.3-.8.5 1.6.2 2.8.1 3.1.6.7.9 1.6.9 2.7 0 4.1-2.3 4.9-4.6 5.2.5.4.9 1.1.9 2.2v3.2c0 .3.2.6.7.5 4.2-1.4 7.2-5.4 7.2-10.1C23.1 5.3 18.3.5 12 .5z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-item" id="instagramLink" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-      <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="social-item" id="twitterLink" aria-label="Twitter">
-        <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/shashikanthpillala" target="_blank" rel="noopener noreferrer" class="social-item" id="linkedinLink" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.11 4.98 3.5zM0 8.98h5V24H0V8.98zM8.5 8.98h4.79v2.06h.07c.67-1.26 2.3-2.59 4.73-2.59 5.06 0 6 3.33 6 7.66V24h-5V16.5c0-1.79-.03-4.09-2.49-4.09-2.49 0-2.87 1.94-2.87 3.97V24h-5V8.98z"/></svg>
-      </a>
-      <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" class="social-item" id="dribbbleLink" aria-label="Dribbble">
-        <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm7.568 5.302c1.4 1.5 2.252 3.5 2.273 5.698-.653-.12-1.47-.12-2.273-.12-.8 0-1.626.12-2.4.24-.12-.24-.24-.48-.36-.72 1.44-.6 2.52-1.44 2.76-2.098zm-1.44 13.176c-1.176 1.176-2.64 1.968-4.32 2.28-.72-1.68-1.68-3.24-2.88-4.32 1.68-.48 3.12-1.44 4.08-2.64.48.84.84 1.68 1.08 2.64.24.48.36 1.08.36 1.68-.12.12-.24.24-.32.36zm-8.4-1.44c-.96-1.32-1.44-2.88-1.44-4.56 0-.72.12-1.44.24-2.16 1.44.24 2.88.24 4.32.12.96 1.08 1.68 2.4 2.16 3.84-1.68.48-3.36 1.32-4.8 2.76h-.48zm-5.28-6c.48-2.64 2.04-4.8 4.32-6.24.72 1.2 1.68 2.16 2.88 2.76-1.2 1.44-2.04 3.12-2.4 4.92-1.8-.24-3.36-.72-4.8-1.44zm10.08-8.64c1.8.24 3.36 1.2 4.56 2.52-.24.6-1.2 1.32-2.52 1.8-1.2.48-2.64.72-4.08.48.48-1.68 1.32-3.12 2.04-4.8zm-4.32 1.44c-.72 1.68-1.44 3.48-1.68 5.4-1.44.12-2.88 0-4.32-.24.48-2.16 1.68-4.08 3.36-5.4.88.08 1.76.16 2.64.24z"/></svg>
-      </a>
-    </aside>
+        <aside class="side-left" aria-hidden="false">
+            <a href="https://github.com/ShashikanthPillala" target="_blank" rel="noopener noreferrer" class="social-item" id="githubLink" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.7 3 8.7 7.2 10.1.5.1.7-.2.7-.5v-1.9c-2.9.7-3.6-1.3-3.6-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 1.7.8 1.7 1.8 3.1 4.8 2.2 6 .9.2-.8.6-1.4 1-1.8-2.3-.3-4.6-1.2-4.6-5.3 0-1.1.4-2 .9-2.7-.1-.3-.4-1.5.1-3.1 0 0 .7-.2 2.3.8.7-.2 1.5-.3 2.3-.3s1.6.1 2.3.3c1.6-1 2.3-.8 2.3-.8.5 1.6.2 2.8.1 3.1.6.7.9 1.6.9 2.7 0 4.1-2.3 4.9-4.6 5.2.5.4.9 1.1.9 2.2v3.2c0 .3.2.6.7.5 4.2-1.4 7.2-5.4 7.2-10.1C23.1 5.3 18.3.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-item" id="instagramLink" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="social-item" id="twitterLink" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shashikanthpillala" target="_blank" rel="noopener noreferrer" class="social-item" id="linkedinLink" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.11 4.98 3.5zM0 8.98h5V24H0V8.98zM8.5 8.98h4.79v2.06h.07c.67-1.26 2.3-2.59 4.73-2.59 5.06 0 6 3.33 6 7.66V24h-5V16.5c0-1.79-.03-4.09-2.49-4.09-2.49 0-2.87 1.94-2.87 3.97V24h-5V8.98z"/></svg>
+            </a>
+            <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" class="social-item" id="dribbbleLink" aria-label="Dribbble">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm7.568 5.302c1.4 1.5 2.252 3.5 2.273 5.698-.653-.12-1.47-.12-2.273-.12-.8 0-1.626.12-2.4.24-.12-.24-.24-.48-.36-.72 1.44-.6 2.52-1.44 2.76-2.098zm-1.44 13.176c-1.176 1.176-2.64 1.968-4.32 2.28-.72-1.68-1.68-3.24-2.88-4.32 1.68-.48 3.12-1.44 4.08-2.64.48.84.84 1.68 1.08 2.64.24.48.36 1.08.36 1.68-.12.12-.24.24-.32.36zm-8.4-1.44c-.96-1.32-1.44-2.88-1.44-4.56 0-.72.12-1.44.24-2.16 1.44.24 2.88.24 4.32.12.96 1.08 1.68 2.4 2.16 3.84-1.68.48-3.36 1.32-4.8 2.76h-.48zm-5.28-6c.48-2.64 2.04-4.8 4.32-6.24.72 1.2 1.68 2.16 2.88 2.76-1.2 1.44-2.04 3.12-2.4 4.92-1.8-.24-3.36-.72-4.8-1.44zm10.08-8.64c1.8.24 3.36 1.2 4.56 2.52-.24.6-1.2 1.32-2.52 1.8-1.2.48-2.64.72-4.08.48.48-1.68 1.32-3.12 2.04-4.8zm-4.32 1.44c-.72 1.68-1.44 3.48-1.68 5.4-1.44.12-2.88 0-4.32-.24.48-2.16 1.68-4.08 3.36-5.4.88.08 1.76.16 2.64.24z"/></svg>
+            </a>
+        </aside>
 
-    <!-- Right vertical email -->
-    <aside class="side-right">
-      <button class="vertical-email" id="verticalEmail" title="Contact me">pillalashashikanth1@gmail.com</button>
-    </aside>
+        <aside class="side-right">
+            <button class="vertical-email" id="verticalEmail" title="Contact me">pillalashashikanth1@gmail.com</button>
+        </aside>
 
-    <!-- Terminal window container -->
-    <section class="terminal-wrap" role="region" aria-label="Interactive terminal">
-      <!-- Terminal window -->
-      <div class="terminal-window" id="terminalWindow" aria-live="polite">
-        <!-- Tab bar -->
-        <div class="tabs-bar" id="tabsBar" role="tablist">
-          <div class="tab-item active" data-tabid="tab-terminal" role="tab" aria-selected="true">
-            <span class="tab-title">Terminal</span><button class="tab-close" title="Close tab" data-tabid="tab-exp">x</button>
-          </div>
-          <!-- dynamically appended tabs go here -->
-          <div class="tab-add" id="tabAdd" title="Open new tab" aria-hidden="true">+</div>
-        </div>
-
-        <!-- Window body -->
-        <div class="terminal-body" id="terminalBody">
-          <!-- terminal content area -->
-          <div class="terminal-panel" id="terminalPanel">
-            <!-- the default tab content container with SEPARATED HERO SECTION -->
-            <div class="tab-content active" id="tab-terminal" data-tabname="Terminal" role="tabpanel">
-              <!-- FIXED HERO SECTION - NEVER CHANGES -->
-              <div class="hero-section" id="heroSection">
-                <div class="name-heading">PILLALA SHASHIKANTH</div>
-                <div class="role-heading">~$ <span id="typingaddedbyme"></span></div>
-              </div>
-              
-              <!-- SCROLLABLE COMMAND HISTORY SECTION -->
-              <div class="command-section">
-                <pre class="terminal-output" id="terminalOutput" aria-hidden="false"></pre>
-                
-                <!-- prompt row with input -->
-                <div class="terminal-input-row" id="inputRow">
-                  <span class="prompt" id="promptText">guest@PillalaShashikanth:~$</span>
-                  <input id="cmdInput" class="cmd-input" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" />
+        <section class="terminal-wrap" role="region" aria-label="Interactive terminal">
+            <div class="terminal-window" id="terminalWindow" aria-live="polite">
+                <div class="tabs-bar" id="tabsBar" role="tablist">
+                    <div class="tab-item active" data-tabid="tab-terminal" role="tab" aria-selected="true">
+                        <span class="tab-title">Terminal</span><button class="tab-close" title="Close tab" data-tabid="tab-exp">x</button>
+                    </div>
+                    <div class="tab-add" id="tabAdd" title="Open new tab" aria-hidden="true">+</div>
                 </div>
-              </div>
+
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-panel" id="terminalPanel">
+                        <div class="tab-content active" id="tab-terminal" data-tabname="Terminal" role="tabpanel">
+                            <div class="hero-section" id="heroSection">
+                                <div class="name-heading">PILLALA SHASHIKANTH</div>
+                                <div class="role-heading">~$ <span id="typingaddedbyme"></span></div>
+                            </div>
+                            
+                            <div class="command-section">
+                                <pre class="terminal-output" id="terminalOutput" aria-hidden="false"></pre>
+                                
+                                <div class="terminal-input-row" id="inputRow">
+                                    <span class="prompt" id="promptText">guest@PillalaShashikanth:~$</span>
+                                    <input id="cmdInput" class="cmd-input" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- other tab panels will be appended dynamically -->
-          </div>
-        </div>
-      </div>
 
-      <!-- Footer -->
-      <footer class="terminal-footer">
-        <small>Created and Designed by Pillala Shashikanth</small>
-      </footer>
-    </section>
-  </main>
+            <footer class="terminal-footer">
+                <small>Created and Designed by Pillala Shashikanth</small>
+            </footer>
+        </section>
+    </main>
 
-  <script src="home.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
