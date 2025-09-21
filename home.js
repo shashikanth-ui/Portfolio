@@ -570,7 +570,7 @@ Type 'help' for list of commands.
 
                             <ul>
                             <li><span>▸</span>HTML5 & (S)CSS</li>
-                            <li><span>▸</span>Firebase</li>
+                            <li><span>▸</span>JWT/OAuth</li>
                             <li><span>▸</span>PostgreSQL</li>
                             </ul>
                         </div>
@@ -609,6 +609,7 @@ Type 'help' for list of commands.
                                 <ul>
                                     <li><span>▸</span>Successfully completed a one-month intensive internship in Full-Stack Web Development. </li>
                                     <li><span>▸</span>Received a Letter of Recommendation for exceptional performance, highlighting remarkable technical skills, professionalism, and a creative approach to solving complex problems. </li>
+                                    <li><span>▸</span><a href="./public/images/Pro_Letter_of_Recommendation.png" class="cert-link">LINK : Prodigy InfoTech Letter of Recommendation</a></li>
                                 </ul>
                             </article>
                             <article id="ey" class="exp-detail">
@@ -660,7 +661,7 @@ Type 'help' for list of commands.
                                 <p class="exp-date">Continuous Learning & Skill Validation</p>
                                 <ul class="certificate-list">
                                     <li><span>▸</span><a href="./public/images/aws_certificate.png" class="cert-link">AWS Academy Graduate - Cloud Foundations</a></li>
-                                    <li><span>▸</span><a href="./public/images/prodigy_certificate.png" class="cert-link">Full-Stack Web Development - Prodigy InfoTech</a></li>
+                                    <li><span>▸</span><a href="./public/images/prodigy_infotech_certificate.png" class="cert-link">Full-Stack Web Development - Prodigy InfoTech</a></li>
                                     <li><span>▸</span><a href="./public/images/ey_certificate.png" class="cert-link">Full-Stack Web Development - Edunet Foundation / EY</a></li>
                                     <li><span>▸</span><a href="./public/images/deloitte_certificate.png" class="cert-link">Technology Virtual Experience - Deloitte</a></li>
                                     <li><span>▸</span><a href="./public/images/udemy_certificate.png" class="cert-link">Full Stack Web Developer - Udemy</a></li>
@@ -759,71 +760,9 @@ Type 'help' for list of commands.
                             <span>JavaScript</span><span>HTML</span><span>CSS</span>
                         </div>
                     </div>
-                     <div class="project-card project-hidden">
-                        <div class="project-header">
-                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/To-Do-List-JS" target="_blank" class="external-link-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
-                            </a>
-                        </div>
-                        <h3>To-Do-List-JS</h3>
-                        <p>A classic To-Do List application to practice DOM manipulation and event handling in JavaScript.</p>
-                        <div class="tech-tags">
-                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
-                        </div>
-                    </div>
-                     <div class="project-card project-hidden">
-                        <div class="project-header">
-                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/Weather-App-JS" target="_blank" class="external-link-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
-                            </a>
-                        </div>
-                        <h3>Weather-App-JS</h3>
-                        <p>A weather application that fetches and displays current weather data from a third-party API.</p>
-                        <div class="tech-tags">
-                            <span>JavaScript</span><span>API</span><span>HTML</span><span>CSS</span>
-                        </div>
-                    </div>
-                    <div class="project-card project-hidden">
-                        <div class="project-header">
-                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/Blog-Website-JS" target="_blank" class="external-link-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
-                            </a>
-                        </div>
-                        <h3>Blog-Website-JS</h3>
-                        <p>A dynamic blog website built to explore content management and dynamic page rendering.</p>
-                        <div class="tech-tags">
-                            <span>JavaScript</span><span>Node.js</span><span>EJS</span>
-                        </div>
-                    </div>
-                    <div class="project-card project-hidden">
-                        <div class="project-header">
-                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/Drum-Kit-JS" target="_blank" class="external-link-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
-                            </a>
-                        </div>
-                        <h3>Drum-Kit-JS</h3>
-                        <p>An interactive drum kit that plays sounds on key presses, showcasing event handling for user input.</p>
-                        <div class="tech-tags">
-                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
-                        </div>
-                    </div>
-                     <div class="project-card project-hidden">
-                        <div class="project-header">
-                            <svg class="folder-icon" width="40" height="32" viewBox="0 0 24 20" fill="currentColor"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg>
-                            <a href="https://github.com/shashikanth-ui/Dice-Gamee" target="_blank" class="external-link-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
-                            </a>
-                        </div>
-                        <h3>Dice-Gamee</h3>
-                        <p>A simple and fun dice game to demonstrate core JavaScript logic and DOM manipulation.</p>
-                        <div class="tech-tags">
-                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
-                        </div>
-                    </div>
+
+                
+
                 </div>
                 <div class="load-more-container">
                     <button id="load-more-btn" class="load-more-btn">Load More</button>
@@ -851,30 +790,38 @@ Type 'help' for list of commands.
     }
 
     function initCertificateModal() {
-        const modal = document.getElementById('certificateModal');
-        const modalImg = document.getElementById('certificateImage');
-        const closeModal = document.querySelector('.close-modal');
+    const modal = document.getElementById('certificateModal');
+    if (!modal) return; // Exit if modal isn't found
 
-        document.querySelectorAll('.cert-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                modal.style.display = "block";
-                modalImg.src = this.href;
-            });
-        });
+    const modalImg = document.getElementById('certificateImage');
+    const closeModalBtn = document.querySelector('.close-modal');
 
-        const close = () => {
-            modal.style.display = "none";
-        };
+    const openModal = (url) => {
+        modalImg.src = url;
+        modal.classList.add('visible');
+    };
 
-        closeModal.addEventListener('click', close);
+    const closeModal = () => {
+        modal.classList.remove('visible');
+    };
 
-        window.addEventListener('click', function (event) {
-            if (event.target == modal) {
-                close();
-            }
-        });
-    }
+    // Listen for clicks on the entire document
+    document.addEventListener('click', (e) => {
+        // If a certificate link was clicked...
+        if (e.target.matches('.cert-link')) {
+            e.preventDefault();
+            openModal(e.target.href);
+        }
+        // If the close button was clicked...
+        if (e.target === closeModalBtn) {
+            closeModal();
+        }
+        // If the modal background was clicked...
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+}
     
     function initializeExperienceListeners() {
         const tabContent = document.getElementById('tab-experience');
@@ -1079,7 +1026,7 @@ Type 'help' for list of commands.
     switchToTab("tab-terminal");
 }
 
-const phrases = ["Full Stack JS Dev   ", "Tech Enthusiast   ", "Creative Coder ⁴⁰⁴   "];
+const phrases = ["Full Stack JS Developer   ", "Tech Enthusiast   ", "Creative Coder ⁴⁰⁴   "];
 const el = document.getElementById("typingaddedbyme");
 
 let i = 0, j = 0, currentPhrase = [], isDeleting = false;
